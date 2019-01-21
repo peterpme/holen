@@ -72,9 +72,16 @@ The object contains the following keys:
 
 *[MDN - Credentials](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Sending_a_request_with_credentials_included)*
 
-**headers** `string`
+**headers** `string` | `object`
 
 *[MDN - Headers](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Headers)*
+
+
+```jsx
+<Holen lazy url="api.startup.com/users" headers={{ Authorization: "Bearer XYZ" }}>
+  {({fetching}) => {fetching && <div>Loading</div>}} // renders nothing, fetch was not started
+</Holen>
+```
 
 **lazy** `boolean`
 
