@@ -76,7 +76,6 @@ The object contains the following keys:
 
 *[MDN - Headers](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Headers)*
 
-
 ```jsx
 <Holen lazy url="api.startup.com/users" headers={{ Authorization: "Bearer XYZ" }}>
   {({fetching}) => {fetching && <div>Loading</div>}} // renders nothing, fetch was not started
